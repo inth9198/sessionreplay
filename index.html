@@ -152,13 +152,47 @@
             opacity: 0.9;
         }
 
-        /* 슬라이드 4: 왜 Clarity인가? */
+        /* 슬라이드 4: Clarity 동영상 데모 */
         .slide-4 {
+            background: linear-gradient(135deg, #2d3561 0%, #1e2640 100%);
+            color: white;
+        }
+
+        .slide-4 h2 {
+            font-size: 3em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .slide-4 .video-container {
+            max-width: 1400px;
+            width: 90%;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .slide-4 video {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .slide-4 .video-caption {
+            margin-top: 20px;
+            font-size: 1.3em;
+            text-align: center;
+            opacity: 0.9;
+        }
+
+        /* 슬라이드 5: 도구 선택 과정 */
+        .slide-5 {
             background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
             color: #333;
         }
 
-        .slide-4 h2 {
+        .slide-5 h2 {
             font-size: 3em;
             margin-bottom: 40px;
             text-align: center;
@@ -194,13 +228,13 @@
             flex: 1;
         }
 
-        /* 슬라이드 5: 적용 방법 */
-        .slide-5 {
+        /* 슬라이드 6: OpenReplay 선택 */
+        .slide-6 {
             background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
             color: #333;
         }
 
-        .slide-5 h2 {
+        .slide-6 h2 {
             font-size: 3em;
             margin-bottom: 40px;
             text-align: center;
@@ -248,13 +282,13 @@
             color: #666;
         }
 
-        /* 슬라이드 6: 세부 기능 */
-        .slide-6 {
+        /* 슬라이드 7: OpenReplay 주요 기능 */
+        .slide-7 {
             background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
             color: #333;
         }
 
-        .slide-6 h2 {
+        .slide-7 h2 {
             font-size: 3em;
             margin-bottom: 35px;
             text-align: center;
@@ -302,13 +336,13 @@
             font-size: 1.2em;
         }
 
-        /* 슬라이드 7: 앞으로의 활용 계획 */
-        .slide-7 {
+        /* 슬라이드 8: 셀프호스팅 구축 과정 */
+        .slide-8 {
             background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
             color: #333;
         }
 
-        .slide-7 h2 {
+        .slide-8 h2 {
             font-size: 3em;
             margin-bottom: 35px;
             text-align: center;
@@ -352,25 +386,59 @@
             color: #555;
         }
 
-        /* 슬라이드 8: 마무리 */
-        .slide-8 {
+        /* 슬라이드 9: 실제 호스팅 화면 */
+        .slide-9 {
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+            color: white;
+        }
+
+        .slide-9 h2 {
+            font-size: 3em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .slide-9 .image-container {
+            max-width: 1500px;
+            width: 90%;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .slide-9 img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .slide-9 .image-caption {
+            margin-top: 20px;
+            font-size: 1.3em;
+            text-align: center;
+            opacity: 0.9;
+        }
+
+        /* 슬라이드 10: 마무리 */
+        .slide-10 {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             text-align: center;
         }
 
-        .slide-8 h2 {
+        .slide-10 h2 {
             font-size: 3.5em;
             margin-bottom: 35px;
         }
 
-        .slide-8 .closing-text {
+        .slide-10 .closing-text {
             font-size: 1.8em;
             line-height: 1.9;
             margin-bottom: 45px;
         }
 
-        .slide-8 .emphasis {
+        .slide-10 .emphasis {
             font-size: 2.3em;
             font-weight: bold;
             color: #ffe66d;
@@ -527,8 +595,22 @@
             </div>
         </div>
 
-        <!-- 슬라이드 4: 도구 선택 과정 -->
+        <!-- 슬라이드 4: Clarity 동영상 데모 -->
         <div class="slide slide-4">
+            <h2>📹 Clarity 실제 동작 화면</h2>
+            <div class="video-container">
+                <video controls autoplay muted loop>
+                    <source src="clarity_test_page.mp4" type="video/mp4">
+                    브라우저가 비디오를 지원하지 않습니다.
+                </video>
+                <div class="video-caption">
+                    Microsoft Clarity의 세션 리플레이 기능 시연
+                </div>
+            </div>
+        </div>
+
+        <!-- 슬라이드 5: 도구 선택 과정 -->
+        <div class="slide slide-5">
             <h2>🤔 도구 선택 과정</h2>
             <div class="benefits-container">
                 <div class="benefit-item">
@@ -550,8 +632,8 @@
             </div>
         </div>
 
-        <!-- 슬라이드 5: OpenReplay 선택 -->
-        <div class="slide slide-5">
+        <!-- 슬라이드 6: OpenReplay 선택 -->
+        <div class="slide slide-6">
             <h2>✅ OpenReplay 선택 이유</h2>
             <div class="steps-container">
                 <div class="step">
@@ -585,8 +667,8 @@
             </div>
         </div>
 
-        <!-- 슬라이드 6: OpenReplay 주요 기능 -->
-        <div class="slide slide-6">
+        <!-- 슬라이드 7: OpenReplay 주요 기능 -->
+        <div class="slide slide-7">
             <h2>🎯 OpenReplay 주요 기능</h2>
             <div class="features-detail">
                 <div class="detail-card">
@@ -628,8 +710,8 @@
             </div>
         </div>
 
-         <!-- 슬라이드 7: 셀프호스팅 구축 과정 -->
-         <div class="slide slide-7">
+         <!-- 슬라이드 8: 셀프호스팅 구축 과정 -->
+         <div class="slide slide-8">
              <h2>🛠️ 셀프호스팅 구축 진행중</h2>
              <div class="roadmap-container">
                  <div class="roadmap-item">
@@ -662,8 +744,19 @@
              </div>
          </div>
 
-        <!-- 슬라이드 8: 마무리 -->
-        <div class="slide slide-8">
+        <!-- 슬라이드 9: 실제 호스팅 화면 -->
+        <div class="slide slide-9">
+            <h2>🖥️ 실제 OpenReplay 호스팅 화면</h2>
+            <div class="image-container">
+                <img src="image.png" alt="OpenReplay 호스팅 화면">
+                <div class="image-caption">
+                    자체 구축한 OpenReplay 대시보드 - 완전한 데이터 통제
+                </div>
+            </div>
+        </div>
+
+        <!-- 슬라이드 10: 마무리 -->
+        <div class="slide slide-10">
             <h2>🎯 기대 효과</h2>
             <div class="closing-text">
                 보안을 지키면서도 강력한 분석 도구 확보<br>
@@ -693,6 +786,8 @@
         <div class="indicator-dot" onclick="goToSlide(5)"></div>
         <div class="indicator-dot" onclick="goToSlide(6)"></div>
         <div class="indicator-dot" onclick="goToSlide(7)"></div>
+        <div class="indicator-dot" onclick="goToSlide(8)"></div>
+        <div class="indicator-dot" onclick="goToSlide(9)"></div>
     </div>
 
     <script>
