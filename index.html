@@ -327,11 +327,9 @@
             margin-bottom: 18px;
             box-shadow: 0 8px 20px rgba(0,0,0,0.1);
             position: relative;
-            padding-left: 100px;
         }
 
         .roadmap-phase {
-            position: absolute;
             left: 20px;
             top: 25px;
             font-size: 1.1em;
@@ -630,48 +628,39 @@
             </div>
         </div>
 
-        <!-- 슬라이드 7: 셀프호스팅 구축 과정 -->
-        <div class="slide slide-7">
-            <h2>🛠️ 셀프호스팅 구축 진행중</h2>
-            <div class="roadmap-container">
-                <div class="roadmap-item">
-                    <div class="roadmap-phase">Docker</div>
-                    <h3>Docker 기반 개발 환경</h3>
-                    <p>
-                        Docker Compose를 활용한 로컬 테스트 환경 구축<br>
-                        PostgreSQL, Redis, MinIO 등 필수 서비스 컨테이너화<br>
-                        개발 단계에서 빠른 프로토타이핑 및 기능 검증
-                    </p>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-phase">Kubernetes</div>
-                    <h3>Kubernetes 프로덕션 배포</h3>
-                    <p>
-                        Helm Chart를 이용한 OpenReplay 클러스터 배포<br>
-                        Auto-scaling 설정으로 트래픽 변동 대응<br>
-                        고가용성(HA) 구성으로 안정적인 서비스 운영
-                    </p>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-phase">현재</div>
-                    <h3>현재 진행 상황</h3>
-                    <p>
-                        Docker 환경에서 설치 및 기본 기능 테스트 완료<br>
-                        Kubernetes 클러스터 환경 구성 진행 중<br>
-                        스토리지, 네트워크, 보안 설정 최적화 작업
-                    </p>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-phase">다음</div>
-                    <h3>앞으로 남은 단계</h3>
-                    <p>
-                        프로덕션 환경 최종 배포 및 안정화<br>
-                        실제 웹사이트에 추적 코드 통합<br>
-                        팀원 교육 및 대시보드 활용 가이드 작성
-                    </p>
-                </div>
-            </div>
-        </div>
+         <!-- 슬라이드 7: 셀프호스팅 구축 과정 -->
+         <div class="slide slide-7">
+             <h2>🛠️ 셀프호스팅 구축 진행중</h2>
+             <div class="roadmap-container">
+                 <div class="roadmap-item">
+                     <div class="roadmap-phase">✅ 완료</div>
+                     <h3>Docker 기반 로컬 환경 구축</h3>
+                     <p>
+                         Docker Compose로 PostgreSQL, ClickHouse, Redis, MinIO 등 전체 스택 구성<br>
+                         Nginx 리버스 프록시 설정으로 서비스 통합<br>
+                         Python(Chalice) 백엔드 + React 프론트엔드 연동 성공
+                     </p>
+                 </div>
+                 <div class="roadmap-item">
+                     <div class="roadmap-phase">🔄 진행중</div>
+                     <h3>오픈소스 버전 주요 이슈 해결</h3>
+                     <p>
+                         ❌ resources.py 파일 누락 → stub 파일 생성으로 우회 처리<br>
+                         ❌ MinIO CORS 에러 → nginx.conf에 CORS 헤더 추가 (S3 서명 포함)<br>
+                         ❌ Presigned URL 포트 문제 → s3.py 수정으로 localhost:9000 자동 변환
+                     </p>
+                 </div>
+                 <div class="roadmap-item">
+                     <div class="roadmap-phase">📋 대기</div>
+                     <h3>다음 단계</h3>
+                     <p>
+                         Kubernetes 클러스터 배포 준비 (Helm Chart 기반)<br>
+                         프로덕션 환경 스토리지 및 네트워크 설정<br>
+                         실제 서비스에 추적 코드 통합 및 모니터링 시작
+                     </p>
+                 </div>
+             </div>
+         </div>
 
         <!-- 슬라이드 8: 마무리 -->
         <div class="slide slide-8">
